@@ -24,6 +24,7 @@ The repo will include modules for the console, models, views, and static assets.
 
 ✅ Initial commit complete. Future updates will include implementation and documentation.
 
+## Team Roles
 | Role                             | Description & Responsibilities                                                                                                                                                      |
 | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Backend Developer**            | Responsible for building the core application logic, APIs, and server-side integration. Implements models, views, and handles business logic in Python using frameworks like Flask. |
