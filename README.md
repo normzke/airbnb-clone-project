@@ -124,3 +124,28 @@ A Booking is associated with one Property and one User (many-to-1)
 A Property can have multiple Reviews (1-to-many)
 
 A Booking is linked to one Payment (1-to-1)
+
+
+## 🧩 Feature Breakdown
+The Airbnb Clone project replicates key functionalities of the Airbnb platform. Below is a list of core features that form the backbone of the system:
+
+1. User Management
+Allows users to sign up, log in, and manage their profiles. Users can be guests or hosts, each with role-specific permissions and dashboards.
+
+2. Property Management
+Enables hosts to list new properties, update details (such as title, description, location, price), and upload images. Each property is linked to the host’s account and viewable by guests.
+
+3. Booking System
+Facilitates reservation of properties by guests. It manages availability checks, date selections, and links bookings to users and properties.
+
+4. Payment Integration
+Handles payment processing for confirmed bookings. Ensures secure transactions, generates receipts, and tracks payment statuses for both hosts and guests.
+
+5. Review & Rating System
+Lets guests leave reviews and rate properties after completing their stay. Helps other users make informed booking decisions based on previous experiences.
+
+6. Search and Filter Functionality
+Users can search for properties by location, date, price range, and property type. This improves the user experience and makes property discovery seamless.
+
+7. Admin Dashboard (Optional)
+An interface for system administrators to manage users, oversee listings, resolve disputes, and monitor platform activity.
