@@ -149,3 +149,34 @@ Users can search for properties by location, date, price range, and property typ
 
 7. Admin Dashboard (Optional)
 An interface for system administrators to manage users, oversee listings, resolve disputes, and monitor platform activity.
+
+
+## 🔐 API Security
+Securing the backend APIs is critical to protecting user data, ensuring system integrity, and maintaining trust. The following security measures will be implemented:
+
+1. Authentication
+We will implement token-based authentication (e.g., JWT) to verify the identity of users accessing the system. This ensures that only registered users can log in and interact with their data or perform authorized actions.
+
+2. Authorization
+Role-based access control (RBAC) will be used to restrict access to different parts of the application based on the user's role (guest, host, admin). For example, only hosts can add or edit property listings, while only guests can make bookings.
+
+3. Input Validation and Sanitization
+All incoming data will be validated and sanitized to prevent common vulnerabilities such as SQL injection and cross-site scripting (XSS). This keeps both user data and server logic safe from manipulation.
+
+4. Rate Limiting
+Rate limiting will be applied to API endpoints to prevent abuse, such as brute-force login attempts or spammy requests. This helps maintain system performance and guards against denial-of-service (DoS) attacks.
+
+5. Secure Data Transmission
+All communications with the backend will use HTTPS to encrypt data in transit. This ensures that sensitive information like passwords and payment data isn’t exposed to potential attackers.
+
+6. Payment Security
+Integration with a secure and compliant payment gateway (e.g., Stripe or PayPal) ensures that financial data is handled by trusted providers, reducing risk and ensuring PCI-DSS compliance.
+
+Why API Security Matters
+Protecting User Data: Ensures that sensitive information such as personal details and login credentials are safe.
+
+Securing Financial Transactions: Prevents unauthorized access to payment data and fraudulent transactions.
+
+Maintaining System Trust: A secure system helps build and retain trust among users, encouraging long-term engagement.
+
+Ensuring Legal Compliance: Adhering to security standards ensures compliance with data protection laws like GDPR.
