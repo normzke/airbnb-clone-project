@@ -33,7 +33,9 @@ The repo will include modules for the console, models, views, and static assets.
 | **Project Manager**              | Coordinates tasks across the team, sets timelines, ensures milestone tracking, and communicates progress. Keeps the project aligned with its goals.                                 |
 | **QA/Test Engineer**             | Develops unit tests and automated testing scripts to ensure features work as expected. Tracks bugs and ensures quality across releases.                                             |
 | **UI/UX Designer**               | Focuses on user flows, visual design, and interaction models. Delivers mockups/wireframes to guide frontend development.                                                            |
-Technology Stack Overview
+
+
+## Technology Stack Overview
 | Technology     | Purpose in the Project                                                                                           |
 | -------------- | ---------------------------------------------------------------------------------------------------------------- |
 | **Python**     | Primary programming language used for developing backend logic, data models, and the console application.        |
@@ -45,3 +47,80 @@ Technology Stack Overview
 | **Git**        | Version control system for tracking changes and enabling collaboration among developers.                         |
 | **GitHub**     | Online repository hosting service where the project is managed, including code collaboration and issue tracking. |
 | **Unittest**   | Python’s built-in testing framework used to write unit tests and ensure code correctness.                        |
+
+
+
+## 🗃️ Database Design
+The project database is designed using a relational structure, with tables representing real-world entities such as users, properties, and bookings. Below is an overview of the core entities and their relationships.
+
+Entities and Key Fields
+Users
+
+id: Unique identifier
+
+name: Full name of the user
+
+email: Unique email address
+
+password: Encrypted user password
+
+role: User role (guest or host)
+
+Properties
+
+id: Unique property identifier
+
+user_id: Foreign key referencing the property owner
+
+title: Title or name of the property
+
+description: Detailed description of the property
+
+location: Address or general location
+
+Bookings
+
+id: Unique booking identifier
+
+user_id: Foreign key referencing the guest
+
+property_id: Foreign key referencing the booked property
+
+check_in: Date of check-in
+
+check_out: Date of check-out
+
+Reviews
+
+id: Unique review identifier
+
+user_id: Reviewer (guest) ID
+
+property_id: Reviewed property ID
+
+rating: Numerical rating (1–5)
+
+comment: Review text
+
+Payments
+
+id: Unique payment ID
+
+booking_id: Foreign key referencing the booking
+
+amount: Payment amount
+
+status: Payment status (e.g., pending, paid)
+
+payment_date: Date of payment
+
+Entity Relationships
+A User can own multiple Properties (1-to-many)
+
+A User can make multiple Bookings (1-to-many)
+
+A Booking is associated with one Property and one User (many-to-1)
+
+A Property can have multiple Reviews (1-to-many)
+
+A Booking is linked to one Payment (1-to-1)
