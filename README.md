@@ -33,4 +33,15 @@ The repo will include modules for the console, models, views, and static assets.
 | **Project Manager**              | Coordinates tasks across the team, sets timelines, ensures milestone tracking, and communicates progress. Keeps the project aligned with its goals.                                 |
 | **QA/Test Engineer**             | Develops unit tests and automated testing scripts to ensure features work as expected. Tracks bugs and ensures quality across releases.                                             |
 | **UI/UX Designer**               | Focuses on user flows, visual design, and interaction models. Delivers mockups/wireframes to guide frontend development.                                                            |
-
+Technology Stack Overview
+| Technology     | Purpose in the Project                                                                                           |
+| -------------- | ---------------------------------------------------------------------------------------------------------------- |
+| **Python**     | Primary programming language used for developing backend logic, data models, and the console application.        |
+| **Flask**      | A lightweight web framework for building RESTful APIs and rendering HTML templates for the web interface.        |
+| **MySQL**      | Relational database system used to store user data, listings, bookings, and reviews.                             |
+| **SQLAlchemy** | ORM (Object Relational Mapper) used to interact with the MySQL database using Python classes.                    |
+| **HTML/CSS**   | Used to build and style the static frontend pages of the Airbnb clone.                                           |
+| **JavaScript** | Adds interactivity to the frontend, such as dynamic filters, pop-ups, and form validation.                       |
+| **Git**        | Version control system for tracking changes and enabling collaboration among developers.                         |
+| **GitHub**     | Online repository hosting service where the project is managed, including code collaboration and issue tracking. |
+| **Unittest**   | Python’s built-in testing framework used to write unit tests and ensure code correctness.                        |
